@@ -1,0 +1,23 @@
+body{
+ background-color: rgba(209, 32, 9, 0.585);
+  margin: 30%; 
+}
+ h1 ,h2{
+ color :rgb(123, 0, 255);
+ font-weight: normal;
+ letter-spacing: .4em;
+ margin-bottom :1em;
+ text-transform: lowercase;
+}
+p{
+ color: rgb(0, 255, 17);
+ background-color: rgb(83, 0, 237);
+letter-spacing: 4 00;
+}
+a:link{color: rgb(249, 13, 13);}
+a:visited{color: chartreuse;}
+a:hover{color: rgb(0, 255, 4);}
+a:active { color: chocolate;}
+a::after{color: springgreen;}
+a::before{color: #9d1a1a;}
+
