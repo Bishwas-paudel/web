@@ -1,0 +1,17 @@
+body{
+background-color: rgb(149, 59, 47);
+}
+form{
+ 
+background-color: aqua;
+text-align: center;
+}
+ul{
+ background-color: rgb(169, 169, 196);
+ margin: 50px;
+ padding: 30px;
+}
+nav{
+
+ background-color: aqua;
+}
