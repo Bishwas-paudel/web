@@ -14,6 +14,7 @@
  add = a+b;
  sub =a-b;
  multi =a*b;
+
  document.write(linebreak);
  document.write(add);
  document.write(linebreak);
@@ -23,12 +24,62 @@
  document.write(linebreak);
  var myvar="local";
  document.write(result)
+ 
+
+  }
+  function compare(){
+    var a =23;
+   var b=24;
+   results= (a==b);
+    document.write(results);
+    document.write(linebreak);
+    greater=(a<b);
+    document.write(greater);
+  }
+  function logical(){
+
+
+    var a= 23;
+    var b= 24;
+    var linebreak ="<br/>"
+    document.write("a&&b=>");
+    result = (a&&b);
+    document.write(result);
+    document.write(linebreak);
+    document.write("!a => ");
+    result = (!a);
+    document.write(result);
+    document.write(linebreak);
+    document.write("a||b=>");
+    result = (a||b);
+    document.write(result);
+
+  }
+  function   bitwise(){
+    var x =9;
+     var y =15;
+     var z =0;
+    document.write("x & y => " + (x&y));
+    document.write("<br/>");
+    document.write("x | y => "+(x|y));
+    document.write("<br/>");
+    document.write("x ^ y =>"+(x^y));
+    document.write("<br/>");
+    document.write("x << 2 =>"+(x<<2));
+    document.write("<br/>");
+    document.write("z >> 2 =>"+(z>>2));
+  }
+  function conditional(){
+    var a= 23;
+    var b= 24;
+    if ((a == b)? true: false ) {document.write ("The values are equal.")}
+    else{document.write ("The values are not equal")}
   }
  </script>
 </head>
 <body>
  <h1>my first javascript</h1>
- <button type="button" onclick="document.getElementById('demo').innerHTML=date()"> click me to display data and time</button>  <!--browser ma xa date function
+ <!-- <button type="button" onclick="document.getElementById('demo').innerHTML=date()"> click me to display data and time</button>  <!--browser ma xa date function
  case sensitivey - the javascript is a case sensetive language likr time and Time are different  dheari keyword camal case hunxan
 comments in java script- single line// and multiline/* comment*/
 javascript in head section just add script tag on head section and type ="text/javascript"
@@ -61,7 +112,12 @@ javascript in head section just add script tag on head section and type ="text/j
 
 
 
- -->
-<input type="button" onclick="hellovai() "value ="hello"/>
+  -->
+
+<input type="button" onclick="hellovai() "value ="arithmetic"/> <br>
+<input type="button" onclick="compare() "value ="compare"/>  <br>
+<input type="button" onclick="logical() "value ="logical"/> <br>
+<input type="button" onclick="bitwise() "value ="bitwise"/> <br>
+<input type="button" onclick="conditional() "value ="condition"/> <br>
 </body>
 </html>
