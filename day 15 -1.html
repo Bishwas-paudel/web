@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 style="text-align: center;">JavaScript switch statement</h1>
+  
+  <label for="gradeInput">Enter your grade (A, B, C, F): </label>
+  <input type="text" id="gradeInput">
+  <button onclick="evaluateGrade()">Submit</button>
+
+  <h2 id="result" style="font-size: larger; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: blue; text-align: center;"></h2>
+  
+  <script type="text/javascript">
+    function evaluateGrade() {
+      var grade = document.getElementById("gradeInput").value.toUpperCase();
+      
+
+      switch (grade) {
+        case "A":
+          resultElement = document.getElementById("result").innerHTML = "excellent!";
+          break;
+        case "B":
+          resultElement = document.getElementById("result").innerHTML = "good!";
+          break;
+        case "C":
+          resultElement = document.getElementById("result").innerHTML = "satisfactory!";
+          break;
+        case "F":
+          resultElement = document.getElementById("result").innerHTML = "fail!";
+          break;
+        default:
+          resultElement = document.getElementById("result").innerHTML = "not a valid grade!";
+          break;
+      }
+    }
+  </script>
+</body>
+</html>
