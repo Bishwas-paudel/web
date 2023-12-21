@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script>
+  function bigImg(x){
+   x.style.height="1000px";
+   x.style.width="1000px";
+
+
+  }
+  function normalImg(x){
+  x.style.height="30px";
+   x.style.width="30px"
+  }
+   function bigH(x){  
+  document.getElementById("demo").style.color = red;
+  
+  }
+ </script>
+</head>
+<body>
+ <h1 onmouseover="bigH()" id="demo">mouse hover</h1>
+ <img onmouseover = "bigImg(this)"  onmouseleave ="normalImg(this)"  src="images.jpg" width="30px" height="30px" alt="laptop" style="font-size: 18">
+</body>
+</html>

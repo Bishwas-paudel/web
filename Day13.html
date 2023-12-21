@@ -6,15 +6,14 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Document</title>
  <script>
+   var linebreak ="<br/>";
+ add = a+b;
+ sub =a-b;
+ multi =a*b;
   var myvar= "global";
   function hellovai(){
    var a =23;
    var b=24;
- var linebreak ="<br/>";
- add = a+b;
- sub =a-b;
- multi =a*b;
-
  document.write(linebreak);
  document.write(add);
  document.write(linebreak);
@@ -22,20 +21,23 @@
  document.write(linebreak);
  document.write(multi);
  document.write(linebreak);
- var myvar="local";
+ var myvar="local";s
  document.write(result)
+ document.write("a + b = " + (a + b));
  
-
+  
   }
   function compare(){
     var a =23;
    var b=24;
-   results= (a==b);
-    document.write(results);
-    document.write(linebreak);
-    greater=(a<b);
-    document.write(greater);
-  }
+   document.write("Equal (==): " + (a == b) + "<br>"); 
+document.write("Not Equal (!=): " + (a != b) + "<br>"); 
+document.write("Strict Equal (===): " + (a === b) + "<br>"); 
+document.write("Strict Not Equal (!==): " + (a !== b) + "<br>");
+document.write("Greater Than (>): " + (a > b) + "<br>");
+document.write("Greater Than or Equal To (>=): " + (a >= b) + "<br>");
+document.write("Less Than (<): " + (a < b) + "<br>");
+document.write("Less Than or Equal To (<=): " + (a <= b) + "<br>"); }
   function logical(){
 
 
