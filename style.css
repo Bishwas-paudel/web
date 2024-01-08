@@ -1,0 +1,21 @@
+PU{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: brown;
+
+}
+
+Center{
+ background-color: yellow;
+ display: block;
+ margin: 5px;
+}
+
+Location{
+ font-size: large;
+ display: block;
+}
+
+Email{
+ font-size: small;
+ display: block;
+}
